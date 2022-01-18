@@ -4,7 +4,7 @@ import TodoList from './components/TodoList';
 import {useState} from 'react'
 
 function App() {
-  const[inputText, setInputText] =useState("")
+  const[inputText, setInputText] = useState("")
   return (
     <div className="App">
       <header>

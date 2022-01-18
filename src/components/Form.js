@@ -2,7 +2,8 @@ import React from "react";
 
 const Form = ({setInputText}) => {
     const inputTextHandler = (e) => {
-        setInputText(e.target.value)
+        console.log(e.target.value);
+        setInputText(e.target.value);
     }
     return(
         <div>
