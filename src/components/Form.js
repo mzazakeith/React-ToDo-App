@@ -1,8 +1,8 @@
 import React from "react";
 import {produce} from 'immer'
 
+let lastId = 0;
 const Form = ({inputText,setInputText, todos, setTodos}) => {
-    let lastId = 0;
 
     const inputTextHandler = (e) => {
         console.log(e.target.value);
@@ -13,6 +13,7 @@ const Form = ({inputText,setInputText, todos, setTodos}) => {
         setTodos([
             ...todos,
             {id:++lastId, text:inputText, completed:false }
+            
         ]);
         setInputText("")
     };
