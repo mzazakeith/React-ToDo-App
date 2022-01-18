@@ -6,6 +6,7 @@ function App() {
       <header>
         <h1>Simple ToDo List</h1>
       </header>
+      
     </div>
   );
 }
